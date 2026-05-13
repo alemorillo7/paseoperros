@@ -21,7 +21,7 @@ const ReservationModal = ({ isOpen, onClose }) => {
     setStatus('loading');
 
     try {
-      const response = await fetch('https://automation8n.fluxia.site/webhook/12d53fcf-554b-4e53-bb84-f371f18495bd', {
+      const response = await fetch('https://automation8n.fluxia.site/webhook/c8b75fb5-db3f-48fa-87d6-eba10f5a5a2c', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -102,7 +102,7 @@ const ReservationModal = ({ isOpen, onClose }) => {
                       <div className="grid grid-cols-2 gap-3">
                         <label className={`
                           flex items-center justify-center p-3 rounded-xl border-2 cursor-pointer transition-all
-                          ${formData.role === 'dueño' ? 'border-primary bg-orange-50 text-primary' : 'border-light-gray hover:border-gray'}
+                          ${formData.role === 'dueño' ? 'border-primary bg-primary/5 text-primary' : 'border-light-gray hover:border-gray'}
                         `}>
                           <input
                             type="radio"
@@ -116,7 +116,7 @@ const ReservationModal = ({ isOpen, onClose }) => {
                         </label>
                         <label className={`
                           flex items-center justify-center p-3 rounded-xl border-2 cursor-pointer transition-all
-                          ${formData.role === 'paseador' ? 'border-primary bg-orange-50 text-primary' : 'border-light-gray hover:border-gray'}
+                          ${formData.role === 'paseador' ? 'border-primary bg-primary/5 text-primary' : 'border-light-gray hover:border-gray'}
                         `}>
                           <input
                             type="radio"

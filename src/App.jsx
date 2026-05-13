@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import Pricing from './components/Pricing';
 import { FAQ, Footer } from './components/Footer';
 import ReservationModal from './components/ReservationModal';
 
@@ -18,7 +17,6 @@ function App() {
       <main>
         <Hero onOpenModal={openModal} />
         <Features />
-        <Pricing onOpenModal={openModal} />
         <FAQ />
       </main>
       <Footer />

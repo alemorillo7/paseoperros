@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo-paseogo.jpeg';
+import Logo from './Logo';
 
 const Navbar = ({ onOpenModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,22 +16,17 @@ const Navbar = ({ onOpenModal }) => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+      isScrolled ? 'bg-bg-app shadow-md py-3' : 'bg-transparent py-5'
     }`}>
       <div className="container flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <img 
-            src={logo} 
-            alt="PaseoGO Logo" 
-            className="h-12 w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform" 
-          />
+          <Logo />
         </a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8 font-medium">
           <a href="#como-funciona" className="hover:text-primary transition-colors">Cómo funciona</a>
           <a href="#beneficios" className="hover:text-primary transition-colors">Beneficios</a>
-          <a href="#precios" className="hover:text-primary transition-colors">Precios</a>
           <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
         </div>
 

@@ -5,7 +5,7 @@ import heroImg from '../assets/hero_dog.png';
 
 const Hero = ({ onOpenModal }) => {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-white">
+    <section className="relative pt-32 pb-20 overflow-hidden bg-bg-app">
       {/* Background Decor */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary-pastel rounded-full blur-3xl opacity-50" />
       <div className="absolute top-1/2 -left-24 w-64 h-64 bg-secondary-pastel rounded-full blur-3xl opacity-40" />

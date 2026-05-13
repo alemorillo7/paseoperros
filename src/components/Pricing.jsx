@@ -39,7 +39,7 @@ const Pricing = ({ onOpenModal }) => {
           {plans.map((plan, i) => (
             <div 
               key={i} 
-              className={`relative p-8 rounded-[40px] border-2 ${plan.color} ${plan.popular ? 'bg-orange-50 scale-105' : 'bg-white'} transition-all`}
+              className={`relative p-8 rounded-[40px] border-2 ${plan.color} ${plan.popular ? 'bg-primary/5 scale-105' : 'bg-white'} transition-all`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
