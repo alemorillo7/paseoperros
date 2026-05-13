@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { PawPrint, ChevronDown, ChevronUp, Instagram, Facebook, Twitter, Phone } from 'lucide-react';
+import { ChevronDown, ChevronUp, Instagram, Facebook, Twitter, Phone } from 'lucide-react';
+import logo from '../assets/logo-paseogo.jpeg';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -45,12 +46,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="bg-primary p-2 rounded-xl">
-                <PawPrint className="text-white" size={24} />
-              </div>
-              <span className="text-2xl font-bold text-white">
-                Paseo<span className="text-primary">GO</span>
-              </span>
+              <img 
+                src={logo} 
+                alt="PaseoGO Logo" 
+                className="h-16 w-auto object-contain rounded-2xl border-2 border-white/10" 
+              />
             </div>
             <p className="text-gray-400 mb-6">Conectamos dueños con paseadores de confianza en segundos. Hecho con ❤️ en Córdoba Capital.</p>
             <div className="flex gap-4">

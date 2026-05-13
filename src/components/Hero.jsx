@@ -16,7 +16,7 @@ const Hero = ({ onOpenModal }) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-soft border border-primary-light text-primary-dark font-semibold text-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-pastel border border-primary-light text-primary-dark font-semibold text-sm mb-6">
             <Star size={16} fill="currentColor" />
             <span>El #1 en paseos de confianza en Córdoba</span>
           </div>
@@ -89,7 +89,7 @@ const Hero = ({ onOpenModal }) => {
             transition={{ delay: 0.5 }}
             className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 border border-light-gray"
           >
-            <div className="w-12 h-12 rounded-full bg-green-soft flex items-center justify-center text-secondary">
+            <div className="w-12 h-12 rounded-full bg-secondary-pastel flex items-center justify-center text-secondary">
               <PawPrint size={24} />
             </div>
             <div>

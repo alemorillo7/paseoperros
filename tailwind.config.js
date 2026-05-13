@@ -8,23 +8,23 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#E67E22',
-          dark: '#C96A0E',
-          light: '#F5A55A',
-          pastel: '#FDE8CC',
+          DEFAULT: '#D37644',
+          dark: '#B85C2B',
+          light: '#E49A73',
+          pastel: '#F5D6C5',
         },
         secondary: {
-          DEFAULT: '#2ECC71',
-          dark: '#1FA355',
-          light: '#7DE4A8',
-          pastel: '#D5F5E3',
+          DEFAULT: '#2F4F47',
+          dark: '#1E3831',
+          light: '#52766D',
+          pastel: '#C8D7D3',
         },
-        dark: '#1C1C1E',
+        dark: '#202D29',
         gray: {
           DEFAULT: '#6B7280',
           light: '#E5E7EB',
         },
-        'bg-app': '#F9FAFB',
+        'bg-app': '#F4F4F4',
       },
       fontFamily: {
         outfit: ['Outfit', 'sans-serif'],

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { PawPrint, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo-paseogo.jpeg';
 
 const Navbar = ({ onOpenModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,12 +20,11 @@ const Navbar = ({ onOpenModal }) => {
     }`}>
       <div className="container flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <div className="bg-primary p-2 rounded-xl group-hover:scale-110 transition-transform">
-            <PawPrint className="text-white" size={24} />
-          </div>
-          <span className="text-2xl font-bold tracking-tight">
-            Paseo<span className="text-primary">GO</span>
-          </span>
+          <img 
+            src={logo} 
+            alt="PaseoGO Logo" 
+            className="h-12 w-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform" 
+          />
         </a>
 
         {/* Desktop Links */}
