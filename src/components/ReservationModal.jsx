@@ -99,7 +99,7 @@ const ReservationModal = ({ isOpen, onClose }) => {
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div>
                       <label className="block text-sm font-semibold mb-2">¿Cómo querés unirte?</label>
-                      <div className="grid grid-cols-2 gap-3">
+                      <div className="grid grid-cols-3 gap-2">
                         <label className={`
                           flex items-center justify-center p-3 rounded-xl border-2 cursor-pointer transition-all
                           ${formData.role === 'dueño' ? 'border-primary bg-primary/5 text-primary' : 'border-light-gray hover:border-gray'}
@@ -112,7 +112,7 @@ const ReservationModal = ({ isOpen, onClose }) => {
                             onChange={handleChange}
                             className="hidden"
                           />
-                          <span className="font-bold">Soy Dueño</span>
+                          <span className="font-bold text-sm">Dueño</span>
                         </label>
                         <label className={`
                           flex items-center justify-center p-3 rounded-xl border-2 cursor-pointer transition-all
@@ -126,13 +126,29 @@ const ReservationModal = ({ isOpen, onClose }) => {
                             onChange={handleChange}
                             className="hidden"
                           />
-                          <span className="font-bold">Soy Paseador</span>
+                          <span className="font-bold text-sm">Paseador</span>
+                        </label>
+                        <label className={`
+                          flex items-center justify-center p-3 rounded-xl border-2 cursor-pointer transition-all
+                          ${formData.role === 'negocio' ? 'border-primary bg-primary/5 text-primary' : 'border-light-gray hover:border-gray'}
+                        `}>
+                          <input
+                            type="radio"
+                            name="role"
+                            value="negocio"
+                            checked={formData.role === 'negocio'}
+                            onChange={handleChange}
+                            className="hidden"
+                          />
+                          <span className="font-bold text-sm">Negocio</span>
                         </label>
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-semibold mb-2">Nombre y Apellido</label>
+                      <label className="block text-sm font-semibold mb-2">
+                        {formData.role === 'negocio' ? 'Nombre del Negocio' : 'Nombre y Apellido'}
+                      </label>
                       <input
                         required
                         type="text"

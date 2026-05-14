@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Instagram, Facebook } from 'lucide-react';
 import Logo from './Logo';
 
 const Navbar = ({ onOpenModal }) => {
@@ -53,7 +53,6 @@ const Navbar = ({ onOpenModal }) => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-6 px-8 flex flex-col gap-6 animate-fade-in">
           <a href="#como-funciona" onClick={() => setMobileMenuOpen(false)}>Cómo funciona</a>
           <a href="#beneficios" onClick={() => setMobileMenuOpen(false)}>Beneficios</a>
-          <a href="#precios" onClick={() => setMobileMenuOpen(false)}>Precios</a>
           <a href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
           <div className="flex flex-col gap-3 pt-4 border-t border-light-gray">
             <button 
@@ -65,6 +64,24 @@ const Navbar = ({ onOpenModal }) => {
             >
               Reserva tu lugar
             </button>
+            <div className="flex justify-center gap-6 pt-2">
+              <a 
+                href="https://www.instagram.com/paseogo.arg?igsh=MWhnZWs4MzRvZzZvbw%3D%3D&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray hover:text-primary transition-colors"
+              >
+                <Instagram size={24} />
+              </a>
+              <a 
+                href="https://www.facebook.com/share/18opRwL8YC/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray hover:text-primary transition-colors"
+              >
+                <Facebook size={24} />
+              </a>
+            </div>
           </div>
         </div>
       )}

@@ -49,9 +49,24 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 mb-6">Conectamos dueños con paseadores de confianza en segundos. Hecho con ❤️ en Córdoba Capital.</p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-all"><Instagram size={20} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-all"><Facebook size={20} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-all"><Twitter size={20} /></a>
+              <a 
+                href="https://www.instagram.com/paseogo.arg?igsh=MWhnZWs4MzRvZzZvbw%3D%3D&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-all"
+                title="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="https://www.facebook.com/share/18opRwL8YC/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-all"
+                title="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
             </div>
           </div>
 
